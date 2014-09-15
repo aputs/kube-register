@@ -12,6 +12,7 @@ var (
 )
 
 func init() {
+	log.SetFlags(0)
 	flag.StringVar(&apiEndpoint, "api-endpoint", "", "kubernetes API endpoint")
 	flag.StringVar(&fleetEndpoint, "fleet-endpoint", "", "fleet endpoint")
 	flag.StringVar(&metadata, "metadata", "k8s=kubelet", "comma-delimited key/value pairs")
@@ -28,7 +29,8 @@ func main() {
 		log.Println(err)
 	}
 	for _, machine := range machines {
-		print(machine)
+		if err := register(apiEndpoint, machine); err != nil {
+			log.Println(err)
+		}
 	}
-	// add nodes to api service
 }
