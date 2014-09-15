@@ -1,6 +1,6 @@
 # kube-register
 
-Register Kubernetes Kubelet machines with the Kubernetes API server using Fleet.
+Register Kubernetes Kubelet machines with the Kubernetes API server using Fleet data.
 
 ## Usage
 
