@@ -1,0 +1,71 @@
+{
+	"ImportPath": "github.com/kelseyhightower/kube-register",
+	"GoVersion": "go1.3",
+	"Deps": [
+		{
+			"ImportPath": "github.com/coreos/fleet/Godeps/_workspace/src/code.google.com/p/google-api-go-client/googleapi",
+			"Comment": "v0.3.2-821-g3c44087",
+			"Rev": "3c44087e486c870ee630052bf9c2ff281903b0f8"
+		},
+		{
+			"ImportPath": "github.com/coreos/fleet/Godeps/_workspace/src/github.com/coreos/go-semver/semver",
+			"Comment": "v0.3.2-821-g3c44087",
+			"Rev": "3c44087e486c870ee630052bf9c2ff281903b0f8"
+		},
+		{
+			"ImportPath": "github.com/coreos/fleet/Godeps/_workspace/src/github.com/coreos/go-systemd/unit",
+			"Comment": "v0.3.2-821-g3c44087",
+			"Rev": "3c44087e486c870ee630052bf9c2ff281903b0f8"
+		},
+		{
+			"ImportPath": "github.com/coreos/fleet/Godeps/_workspace/src/github.com/docker/libcontainer/netlink",
+			"Comment": "v0.3.2-821-g3c44087",
+			"Rev": "3c44087e486c870ee630052bf9c2ff281903b0f8"
+		},
+		{
+			"ImportPath": "github.com/coreos/fleet/client",
+			"Comment": "v0.3.2-821-g3c44087",
+			"Rev": "3c44087e486c870ee630052bf9c2ff281903b0f8"
+		},
+		{
+			"ImportPath": "github.com/coreos/fleet/etcd",
+			"Comment": "v0.3.2-821-g3c44087",
+			"Rev": "3c44087e486c870ee630052bf9c2ff281903b0f8"
+		},
+		{
+			"ImportPath": "github.com/coreos/fleet/job",
+			"Comment": "v0.3.2-821-g3c44087",
+			"Rev": "3c44087e486c870ee630052bf9c2ff281903b0f8"
+		},
+		{
+			"ImportPath": "github.com/coreos/fleet/log",
+			"Comment": "v0.3.2-821-g3c44087",
+			"Rev": "3c44087e486c870ee630052bf9c2ff281903b0f8"
+		},
+		{
+			"ImportPath": "github.com/coreos/fleet/machine",
+			"Comment": "v0.3.2-821-g3c44087",
+			"Rev": "3c44087e486c870ee630052bf9c2ff281903b0f8"
+		},
+		{
+			"ImportPath": "github.com/coreos/fleet/pkg",
+			"Comment": "v0.3.2-821-g3c44087",
+			"Rev": "3c44087e486c870ee630052bf9c2ff281903b0f8"
+		},
+		{
+			"ImportPath": "github.com/coreos/fleet/registry",
+			"Comment": "v0.3.2-821-g3c44087",
+			"Rev": "3c44087e486c870ee630052bf9c2ff281903b0f8"
+		},
+		{
+			"ImportPath": "github.com/coreos/fleet/schema",
+			"Comment": "v0.3.2-821-g3c44087",
+			"Rev": "3c44087e486c870ee630052bf9c2ff281903b0f8"
+		},
+		{
+			"ImportPath": "github.com/coreos/fleet/unit",
+			"Comment": "v0.3.2-821-g3c44087",
+			"Rev": "3c44087e486c870ee630052bf9c2ff281903b0f8"
+		}
+	]
+}
