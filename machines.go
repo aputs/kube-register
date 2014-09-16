@@ -3,14 +3,31 @@ package main
 import (
 	"fmt"
 	"log"
+	"net"
 	"net/http"
+	"net/url"
 
 	"github.com/coreos/fleet/client"
 )
 
 func getMachines(endpoint string, metadata map[string]string) ([]string, error) {
+	dialFunc := net.Dial
 	machineList := make([]string, 0)
-	c := &http.Client{}
+	u, err := url.Parse(endpoint)
+	if err != nil {
+		return nil, err
+	}
+	if u.Scheme == "unix" {
+		endpoint = "http://domain-sock/"
+		dialFunc = func(network, addr string) (net.Conn, error) {
+			return net.Dial("unix", u.Path)
+		}
+	}
+	c := &http.Client{
+		Transport: &http.Transport{
+			Dial: dialFunc,
+		},
+	}
 	fleetClient, err := client.NewHTTPClient(c, endpoint)
 	if err != nil {
 		return nil, err
