@@ -10,7 +10,7 @@ import (
 	"github.com/coreos/fleet/client"
 )
 
-func getMachines(endpoint string, metadata map[string]string) ([]string, error) {
+func getMachines(endpoint string, metadata map[string][]string) ([]string, error) {
 	dialFunc := net.Dial
 	machineList := make([]string, 0)
 	u, err := url.Parse(endpoint)
